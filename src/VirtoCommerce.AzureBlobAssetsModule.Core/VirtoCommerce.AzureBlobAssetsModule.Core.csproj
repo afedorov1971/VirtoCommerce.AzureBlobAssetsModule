@@ -17,6 +17,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AWSSDK.S3" Version="3.7.301.1" />
         <PackageReference Include="Azure.Storage.Blobs" Version="12.13.1" />
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
         <PackageReference Include="VirtoCommerce.Assets.Abstractions" Version="3.200.0" />
