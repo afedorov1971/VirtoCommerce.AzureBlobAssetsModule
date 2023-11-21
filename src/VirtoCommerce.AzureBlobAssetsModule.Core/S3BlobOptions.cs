@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace VirtoCommerce.AzureBlobAssetsModule.Core
 {
-    public class AzureBlobOptions
+    public class S3BlobOptions
     {
         [Required]
         public string ConnectionString { get; set; }

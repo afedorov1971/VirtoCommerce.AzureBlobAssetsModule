@@ -9,11 +9,11 @@ namespace VirtoCommerce.Platform.Assets.AzureBlobStorage.Tests
 {
     public class AzureBlobStorageProviderTests
     {
-        private readonly IOptions<AzureBlobOptions> _options;
+        private readonly IOptions<S3BlobOptions> _options;
 
         public AzureBlobStorageProviderTests()
         {
-            _options = new OptionsWrapper<AzureBlobOptions>(new AppConfiguration().GetApplicationConfiguration<AzureBlobOptions>());
+            _options = new OptionsWrapper<S3BlobOptions>(new AppConfiguration().GetApplicationConfiguration<S3BlobOptions>());
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace VirtoCommerce.Platform.Assets.AzureBlobStorage.Tests
         public void StreamWritePermissionsTest()
         {
             // Arrange
-            var provider = new AzureBlobProvider(_options, new OptionsWrapper<PlatformOptions>(new PlatformOptions()), null);
+            var provider = new S3BlobProvider(_options, new OptionsWrapper<PlatformOptions>(new PlatformOptions()), null);
             var fileName = "file-write.tmp";
             var fileUrl = $"tmpfolder/{fileName}";
 
@@ -44,7 +44,7 @@ namespace VirtoCommerce.Platform.Assets.AzureBlobStorage.Tests
         {
             //Arrange
             var services = new ServiceCollection();
-            services.AddOptions<AzureBlobOptions>()
+            services.AddOptions<S3BlobOptions>()
                 .Configure(o =>
                 {
                     o.ConnectionString = null;
@@ -55,9 +55,9 @@ namespace VirtoCommerce.Platform.Assets.AzureBlobStorage.Tests
             var sp = services.BuildServiceProvider();
 
             //Assert
-            var error = Assert.Throws<OptionsValidationException>(() => sp.GetRequiredService<IOptions<AzureBlobOptions>>().Value);
-            ValidateFailure<AzureBlobOptions>(error, Options.DefaultName, 1,
-                $"DataAnnotation validation failed for '{nameof(AzureBlobOptions)}' members: '{nameof(AzureBlobOptions.ConnectionString)}' with the error: 'The {nameof(AzureBlobOptions.ConnectionString)} field is required.'.");
+            var error = Assert.Throws<OptionsValidationException>(() => sp.GetRequiredService<IOptions<S3BlobOptions>>().Value);
+            ValidateFailure<S3BlobOptions>(error, Options.DefaultName, 1,
+                $"DataAnnotation validation failed for '{nameof(S3BlobOptions)}' members: '{nameof(S3BlobOptions.ConnectionString)}' with the error: 'The {nameof(S3BlobOptions.ConnectionString)} field is required.'.");
         }
 
         private void ValidateFailure<TOptions>(OptionsValidationException ex, string name = "", int count = 1, params string[] errorsToMatch)
