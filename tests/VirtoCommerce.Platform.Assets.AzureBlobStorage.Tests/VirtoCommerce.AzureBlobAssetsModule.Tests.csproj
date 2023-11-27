@@ -16,14 +16,14 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="coverlet.collector" Version="3.1.0">
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\VirtoCommerce.AzureBlobAssetsModule.Core\VirtoCommerce.AzureBlobAssetsModule.Core.csproj" />
+    <ProjectReference Include="..\..\src\VirtoCommerce.AzureBlobAssetsModule.Core\VirtoCommerce.MinIoAssetsModule.Core.csproj" />
   </ItemGroup>
 
 </Project>

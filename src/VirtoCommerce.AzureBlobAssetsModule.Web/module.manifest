@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <id>VirtoCommerce.AzureBlobAssets</id>
+  <id>VirtoCommerce.MinIoAssets</id>
   <version>3.212.0</version>
   <version-tag />
   <platformVersion>3.200.0</platformVersion>
-  <title>Azure Blob Storage Assets Provider</title>
-  <description>Provide integration with Azure Blob Storage for Assets Management</description>
+  <title>MinIo Storage Assets Provider</title>
+  <description>Provide integration with MinIo Storage for Assets Management</description>
   <authors>
     <author>Virto Commerce</author>
   </authors>
@@ -18,10 +18,10 @@
   <releaseNotes />
   <copyright>Copyright © 2023 Virto Commerce. All rights reserved</copyright>
   <tags>assets</tags>
-  <assemblyFile>VirtoCommerce.AzureBlobAssetsModule.Web.dll</assemblyFile>
-  <moduleType>VirtoCommerce.AzureBlobAssetsModule.Web.Module, VirtoCommerce.AzureBlobAssetsModule.Web</moduleType>
+  <assemblyFile>VirtoCommerce.MinIoAssetsModule.Web.dll</assemblyFile>
+  <moduleType>VirtoCommerce.MinIoAssetsModule.Web.Module, VirtoCommerce.MinIoAssetsModule.Web</moduleType>
   <dependencies>
-    <dependency id="VirtoCommerce.Assets" version="3.204.0" />
+    <dependency id="VirtoCommerce.Assets" version="3.202.0" />
   </dependencies>
   <groups>
     <group>commerce</group>

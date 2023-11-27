@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace VirtoCommerce.AzureBlobAssetsModule.Core
+namespace VirtoCommerce.MinIoAssetsModule.Core
 {
     public class S3BlobOptions
     {

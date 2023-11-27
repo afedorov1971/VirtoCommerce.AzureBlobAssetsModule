@@ -27,6 +27,6 @@
       <PackageReference Include="VirtoCommerce.Platform.Hangfire" Version="3.200.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VirtoCommerce.AzureBlobAssetsModule.Core\VirtoCommerce.AzureBlobAssetsModule.Core.csproj" />
+    <ProjectReference Include="..\VirtoCommerce.AzureBlobAssetsModule.Core\VirtoCommerce.MinIoAssetsModule.Core.csproj" />
   </ItemGroup>
 </Project>

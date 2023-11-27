@@ -1,9 +1,10 @@
-using Microsoft.Extensions.DependencyInjection;
 using System;
+using Microsoft.Extensions.DependencyInjection;
 using VirtoCommerce.Assets.Abstractions;
 using VirtoCommerce.AssetsModule.Core.Assets;
+using VirtoCommerce.AzureBlobAssetsModule.Core;
 
-namespace VirtoCommerce.AzureBlobAssetsModule.Core.Extensions
+namespace VirtoCommerce.MinIoAssetsModule.Core.Extensions
 {
     public static class ServiceCollectionExtensions
     {

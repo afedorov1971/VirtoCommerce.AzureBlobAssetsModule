@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using VirtoCommerce.AzureBlobAssetsModule.Core;
-using VirtoCommerce.AzureBlobAssetsModule.Core.Extensions;
+using VirtoCommerce.MinIoAssetsModule.Core;
+using VirtoCommerce.MinIoAssetsModule.Core.Extensions;
 using VirtoCommerce.Platform.Core.Common;
 using VirtoCommerce.Platform.Core.Modularity;
 
-
-namespace VirtoCommerce.AzureBlobAssetsModule.Web
+namespace VirtoCommerce.MinIoAssetsModule.Web
 {
     public class Module : IModule, IHasConfiguration
     {
